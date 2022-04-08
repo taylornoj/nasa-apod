@@ -9,7 +9,7 @@ function Header() {
 
 
   return (
-    <Container className="title-container">
+    <Container className="header-container">
       <Row>
         
           <Image
