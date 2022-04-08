@@ -6,6 +6,7 @@ import './Header.scss';
 
 function Header(props) {
   const { visible, handleIconClick } = props
+  const userDevice = detectDevice()
 
 
 
@@ -27,13 +28,22 @@ function Header(props) {
         className="app-logo"
         />
         </Col>
-
+        <Col
+          xs={12}
+          md={8}
+          className={
+            userDevice === 'tablet' || userDevice === 'desktop'
+              ? 'tablet-or-up'
+              : ''
+          }
+        >
         <Image
 
         src={apod}
         alt="logo2"
         className="app-logo2"
         />
+        </Col>
 
       </Row>
     </Container>
