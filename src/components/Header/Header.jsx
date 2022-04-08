@@ -1,8 +1,8 @@
 import nasaPic from './rednasa.png';
 import apod from './apod2.png';
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import { detectDevice } from '../../utils.jsx'
-
+import { detectDevice } from '../../utils.jsx';
+import './Header.scss';
 
 function Header() {
 
